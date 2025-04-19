@@ -1,0 +1,22 @@
+version = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "bottle"
+version = "0.13.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/3e/5b/1c6ceed49cec0beb9ae9f6e511833d16e6935dd374925d1525588ea12f2b/bottle-0.13.0.tar.gz", hash = "sha256:ce11b454c3853c1b3283aabf68108d169b233b85fc5ceb3f0b732bfe24aa746d", size = 99295 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d7/58/16e331af18795f5c1797a26aa4f5a5c569e4822b34e6654e6456b9453440/bottle-0.13.0-py2.py3-none-any.whl", hash = "sha256:f322f5247f35150dc8686f44183af837597bd9a7db55a16901181b8b0d78f23a", size = 103705 },
+]
+
+[[package]]
+name = "bottle-tutorial"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "bottle" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "bottle", specifier = "==0.13" }]
